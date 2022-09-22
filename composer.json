@@ -1,0 +1,15 @@
+{
+    "name": "cuong/ec_product",
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc"
+        }
+    },
+    "authors": [
+        {
+            "name": "cuongpham2107",
+            "email": "cuongpham2107@gmail.com"
+        }
+    ],
+    "require": {}
+}
