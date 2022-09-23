@@ -56,8 +56,8 @@ class CustomPostTypeController extends BaseController
 		$this->subpages = array(
 			array(
 				'parent_slug' => 'ec_product_plugin', 
-				'page_title' => 'Custom Post Types', 
-				'menu_title' => 'CPT Manager', 
+				'page_title' => __('Custom Post Types','ec-product-plugin'), 
+				'menu_title' => __('CPT Manager','ec-product-plugin'), 
 				'capability' => 'manage_options', 
 				'menu_slug' => 'ec_product_cpt', 
 				'callback' => array( $this->callbacks, 'adminCpt' )
@@ -83,7 +83,7 @@ class CustomPostTypeController extends BaseController
 		$args = array(
 			array(
 				'id' => 'ec_product_cpt_index',
-				'title' => 'Custom Post Type Manager',
+				'title' =>  __('Custom Post Type Manager','ec-product-plugin'),
 				'callback' => array( $this->cpt_callbacks, 'cptSectionManager' ),
 				'page' => 'ec_product_cpt'
 			)
@@ -97,7 +97,7 @@ class CustomPostTypeController extends BaseController
 		$args = array(
 			array(
 				'id' => 'post_type',
-				'title' => 'Custom Post Type ID',
+				'title' => __('Custom Post Type ID','ec-product-plugin') ,
 				'callback' => array( $this->cpt_callbacks, 'textField' ),
 				'page' => 'ec_product_cpt',
 				'section' => 'ec_product_cpt_index',
@@ -109,7 +109,7 @@ class CustomPostTypeController extends BaseController
 			),
 			array(
 				'id' => 'singular_name',
-				'title' => 'Singular Name',
+				'title' => __('Singular Name','ec-product-plugin'),
 				'callback' => array( $this->cpt_callbacks, 'textField' ),
 				'page' => 'ec_product_cpt',
 				'section' => 'ec_product_cpt_index',
@@ -121,7 +121,7 @@ class CustomPostTypeController extends BaseController
 			),
 			array(
 				'id' => 'plural_name',
-				'title' => 'Plural Name',
+				'title' => __('Plural Name','ec-product-plugin'),
 				'callback' => array( $this->cpt_callbacks, 'textField' ),
 				'page' => 'ec_product_cpt',
 				'section' => 'ec_product_cpt_index',
@@ -133,7 +133,7 @@ class CustomPostTypeController extends BaseController
 			),
 			array(
 				'id' => 'public',
-				'title' => 'Public',
+				'title' => __('Public','ec-product-plugin'),
 				'callback' => array( $this->cpt_callbacks, 'checkboxField' ),
 				'page' => 'ec_product_cpt',
 				'section' => 'ec_product_cpt_index',
@@ -145,7 +145,7 @@ class CustomPostTypeController extends BaseController
 			),
 			array(
 				'id' => 'has_archive',
-				'title' => 'Archive',
+				'title' => __('Archive','ec-product-plugin'),
 				'callback' => array( $this->cpt_callbacks, 'checkboxField' ),
 				'page' => 'ec_product_cpt',
 				'section' => 'ec_product_cpt_index',
@@ -175,9 +175,9 @@ class CustomPostTypeController extends BaseController
 				'archives'              => $options['singular_name'] . ' Archives',
 				'attributes'            => $options['singular_name'] . ' Attributes',
 				'parent_item_colon'     => 'Parent ' . $options['singular_name'],
-				'all_items'             => 'All ' . $options['plural_name'],
-				'add_new_item'          => 'Add New ' . $options['singular_name'],
-				'add_new'               => 'Add New',
+				'all_items'             => __('All','ec-product-plugin').' '. $options['plural_name'],
+				'add_new_item'          => __('Add New ','ec-product-plugin') . $options['singular_name'],
+				'add_new'               => __('Add New ','ec-product-plugin'),
 				'new_item'              => 'New ' . $options['singular_name'],
 				'edit_item'             => 'Edit ' . $options['singular_name'],
 				'update_item'           => 'Update ' . $options['singular_name'],
@@ -186,8 +186,8 @@ class CustomPostTypeController extends BaseController
 				'search_items'          => 'Search ' . $options['plural_name'],
 				'not_found'             => 'No ' . $options['singular_name'] . ' Found',
 				'not_found_in_trash'    => 'No ' . $options['singular_name'] . ' Found in Trash',
-				'featured_image'        => 'Featured Image',
-				'set_featured_image'    => 'Set Featured Image',
+				'featured_image'        => __('Featured Image','ec-product-plugin'),
+				'set_featured_image'    => __('Set Featured Image','ec-product-plugin'),
 				'remove_featured_image' => 'Remove Featured Image',
 				'use_featured_image'    => 'Use Featured Image',
 				'insert_into_item'      => 'Insert into ' . $options['singular_name'],

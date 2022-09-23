@@ -20,16 +20,8 @@ class BaseController
 		$this->plugin = plugin_basename( dirname( __FILE__, 3 ) ) . '/ec-product-plugin.php';
 
 		$this->managers = array(
-			'custom_login' 			=> 'Activate Custom Login',
-			'cpt_manager' => 'Activate CPT Manager',
-			'taxonomy_manager' => 'Activate Taxonomy Manager',
-			'media_widget' => 'Activate Media Widget',
-			'gallery_manager' => 'Activate Gallery Manager',
-			'testimonial_manager' => 'Activate Testimonial Manager',
-			'templates_manager' => 'Activate Templates Manager',
-			'login_manager' => 'Activate Ajax Login/Signup',
-			'membership_manager' => 'Activate Membership Manager',
-			'chat_manager' => 'Activate Chat Manager'
+			'custom_login' 		=> __('Activate Custom Login','ec-product-plugin'),
+			'cpt_manager' 		=> __('Activate CPT Manager','ec-product-plugin'),
 		);
 	}
 

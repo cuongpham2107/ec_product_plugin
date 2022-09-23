@@ -39,6 +39,9 @@
 		"vinyl-buffer": "^1.0.0",
 		"vinyl-source-stream": "^1.1.0"
 	},
+	"scripts": {
+		"watch" : "npx tailwindcss -i ./src/input.css -o ./assets/output.css --watch"
+	},
 	"babel": {
 		"presets": [
 			"env"

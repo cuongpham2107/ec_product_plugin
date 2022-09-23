@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ec-product-plugin\n"
+"POT-Creation-Date: 2022-09-22 14:54+0700\n"
+"PO-Revision-Date: 2022-09-22 14:54+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/Api/Callbacks/CptCallbacks.php:12
+msgid "Create as many Custom Post Types as you want."
+msgstr "Tạo nhiều loại bài đăng tùy chỉnh như bạn muốn."
+
+#: inc/Api/Callbacks/LoginCallbacks.php:18
+msgid "Custom login setting Field"
+msgstr "Trường cài đặt đăng nhập tùy chỉnh"
+
+#: inc/Api/Callbacks/LoginCallbacks.php:39
+msgid "Upload image"
+msgstr "Tải lên hình ảnh"
+
+#: inc/Api/Callbacks/ManagerCallbacks.php:24
+msgid ""
+"Manage the Sections and Features of this Plugin by activating the checkboxes "
+"from the following list."
+msgstr ""
+"Quản lý các Phần và Tính năng của Plugin này bằng cách kích hoạt các hộp "
+"kiểm từ danh sách sau."
+
+#: inc/Base/BaseController.php:23
+msgid "Activate Custom Login"
+msgstr "Kích hoạt Tùy chỉnh Đăng nhập"
+
+#: inc/Base/BaseController.php:24
+msgid "Activate CPT Manager"
+msgstr "Kích hoạt Trình quản lý CPT"
+
+#: inc/Base/CustomLoginController.php:53 inc/Base/CustomLoginController.php:54
+msgid "Custom Login"
+msgstr "Tuỳ chỉnh đăng nhập"
+
+#: inc/Base/CustomLoginController.php:89
+#, fuzzy
+#| msgid "Setting Login"
+msgid "Settings Login"
+msgstr "Cài đặt trang đăng nhập"
+
+#: inc/Base/CustomLoginController.php:105
+msgid "Logo Login"
+msgstr "Logo Trang đăng nhập"
+
+#: inc/Base/CustomLoginController.php:116
+msgid "Background Color Login"
+msgstr "Tuỳ chỉnh mầu nền trang đăng nhập"
+
+#: inc/Base/CustomPostTypeController.php:59
+msgid "Custom Post Types"
+msgstr "Loại bài đăng tùy chỉnh"
+
+#: inc/Base/CustomPostTypeController.php:60
+msgid "CPT Manager"
+msgstr "Quản lý CPT"
+
+#: inc/Base/CustomPostTypeController.php:86
+msgid "Custom Post Type Manager"
+msgstr "Trình quản lý loại bài đăng tùy chỉnh"
+
+#: inc/Base/CustomPostTypeController.php:100
+msgid "Custom Post Type ID"
+msgstr "ID loại bài đăng tùy chỉnh"
+
+#: inc/Base/CustomPostTypeController.php:112
+msgid "Singular Name"
+msgstr "Tên số ít"
+
+#: inc/Base/CustomPostTypeController.php:124
+msgid "Plural Name"
+msgstr "Tên số nhiều"
+
+#: inc/Base/CustomPostTypeController.php:136
+msgid "Public"
+msgstr "Công cộng"
+
+#: inc/Base/CustomPostTypeController.php:148
+msgid "Archive"
+msgstr "Lưu trữ"
+
+#: inc/Base/CustomPostTypeController.php:178
+msgid "All"
+msgstr "Tất cả"
+
+#: inc/Base/CustomPostTypeController.php:179
+#: inc/Base/CustomPostTypeController.php:180
+msgid "Add New "
+msgstr "Thêm mới"
+
+#: inc/Base/CustomPostTypeController.php:189
+#, fuzzy
+#| msgid "Set Featured Image"
+msgid "Featured Image"
+msgstr "Tải lên hình ảnh"
+
+#: inc/Base/CustomPostTypeController.php:190
+msgid "Set Featured Image"
+msgstr "Tải lên hình ảnh"
+
+#: inc/Pages/Dashboard.php:36
+msgid "Dashboard"
+msgstr "Quản trị"
+
+#: inc/Pages/Dashboard.php:43 templates/admin.php:2
+msgid "Ec_product Plugin"
+msgstr "Ec_product tiện ích"
+
+#: inc/Pages/Dashboard.php:72
+msgid "Settings Manager"
+msgstr "Quản lý cài đặt"
+
+#: templates/admin.php:6
+msgid "Manage Settings"
+msgstr "Quản lý cài đặt"
+
+#: templates/admin.php:7
+msgid "Update"
+msgstr "Cập nhập"
+
+#: templates/admin.php:8
+msgid "About"
+msgstr "Giới thiệu"
+
+#: templates/cpt.php:2
+msgid "CPT Manage"
+msgstr "Tuỳ chỉnh bài đăng"
+
+#: templates/custom_login.php:6
+msgid "Setting Login"
+msgstr "Cài đặt trang đăng nhập"

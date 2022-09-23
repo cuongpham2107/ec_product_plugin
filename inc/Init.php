@@ -18,14 +18,6 @@ final class Init
 			Base\SettingsLinks::class,
 			Base\CustomLoginController::class,
 			Base\CustomPostTypeController::class,
-			Base\CustomTaxonomyController::class,
-			Base\WidgetController::class,
-			Base\GalleryController::class,
-			Base\TestimonialController::class,
-			Base\TemplateController::class,
-			Base\AuthController::class,
-			Base\MembershipController::class,
-			Base\ChatController::class,
 		];
 	}
 

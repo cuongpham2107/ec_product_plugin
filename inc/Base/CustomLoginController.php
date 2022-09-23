@@ -35,11 +35,13 @@ class CustomLoginController extends BaseController
 
 		$this->setSections();
 		
-		$this->setFields();
+		// $this->setFields();
 
+		
 		$this->settings->addSubPages( $this->subpages )->register();
 
 	}
+	
     /**
      * Thêm Sub Menu
      */
@@ -48,8 +50,8 @@ class CustomLoginController extends BaseController
 		$this->subpages = array(
 			array(
 				'parent_slug' => 'ec_product_plugin', 
-				'page_title' => 'Custom Login', 
-				'menu_title' => 'Custom Login', 
+				'page_title' => __('Custom Login','ec-product-plugin'), 
+				'menu_title' => __('Custom Login','ec-product-plugin'), 
 				'capability' => 'manage_options', 
 				'menu_slug' => 'ec_product_custom_login', 
 				'callback' => array( $this->loginCallbacks, 'adminCustomLogin' )
@@ -64,14 +66,40 @@ class CustomLoginController extends BaseController
         $settings = array(
 			array(
 				'option_group'		=>	'custom_login_settings',
-				'option_name'		=>	'custom_login_logo',
-				'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+				'option_name'		=>	'custom_login_logo_one',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
             ),
             array(
 				'option_group'		=>	'custom_login_settings',
-				'option_name'		=>	'custom_login_bg',
-				'callback'			=>	array($this->loginCallbacks,'loginSanitize')
-			)
+				'option_name'		=>	'custom_login_bg_one',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+			),
+			array(
+				'option_group'		=>	'custom_login_settings',
+				'option_name'		=>	'custom_login_logo_two',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+            ),
+            array(
+				'option_group'		=>	'custom_login_settings',
+				'option_name'		=>	'custom_login_bg_two',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+			),
+			array(
+				'option_group'		=>	'custom_login_settings',
+				'option_name'		=>	'custom_login_logo_three',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+            ),
+            array(
+				'option_group'		=>	'custom_login_settings',
+				'option_name'		=>	'custom_login_bg_three',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+			),
+			array(
+				'option_group'		=>	'custom_login_settings',
+				'option_name'		=>	'active_theme_login',
+				// 'callback'			=>	array($this->loginCallbacks,'loginSanitize')
+			),
+
 		);
        
 		$this->settings->setSettings($settings);
@@ -84,7 +112,7 @@ class CustomLoginController extends BaseController
         $sections = array(
             array(
                 'id'            => 'custom_login_section',
-                'title'   		=> 'Settings Login',
+                'title'   		=> __('Settings Login','ec-product-plugin'),
                 'callback'      => array( $this->loginCallbacks, 'sectionCustomLogin' ),
                 'page'          =>'custom_login_page'
             )
@@ -94,34 +122,35 @@ class CustomLoginController extends BaseController
     /**
      * Thêm Fields cho Custom Login 
      */
-    public function setFields()
-    {
-        $fields = array(
+    // public function setFields()
+    // {
+    //     $fields = array(
             
-            array(
-                'id' =>  'logo_login',
-				'title' =>  'Logo Login',
-				'callback' => array( $this->loginCallbacks, 'logo_login' ),
-				'page' => 'custom_login_page',
-				'section' => 'custom_login_section',
-				'args' => array(
-                    'option_name'		=>	'custom_login_logo',
-					'label_for' =>  'logo_login',
-				)
-            ),
-			array(
-                'id' =>  'background_color_login',
-				'title' =>  'Background Color Login',
-				'callback' => array( $this->loginCallbacks,'background_color_login'),
-				'page' => 'custom_login_page',
-				'section' => 'custom_login_section',
-				'args' => array(
-                    'option_name'		=>	'custom_login_bg',
-					'label_for' =>  'background_color_login',
-				)
-            ),
+    //         array(
+    //             'id' =>  'logo_login',
+	// 			'title' =>  __('Logo Login','ec-product-plugin'),
+	// 			'callback' => array( $this->loginCallbacks, 'logo_login' ),
+	// 			'page' => 'custom_login_page',
+	// 			'section' => 'custom_login_section',
+	// 			'args' => array(
+    //                 'option_name'		=>	'custom_login_logo',
+	// 				'label_for' =>  'logo_login',
+	// 			)
+    //         ),
+	// 		array(
+    //             'id' =>  'background_color_login',
+	// 			'title' =>  __('Background Color Login','ec-product-plugin'),
+	// 			'callback' => array( $this->loginCallbacks,'background_color_login'),
+	// 			'page' => 'custom_login_page',
+	// 			'section' => 'custom_login_section',
+	// 			'args' => array(
+    //                 'option_name'		=>	'custom_login_bg',
+	// 				'label_for' =>  'background_color_login',
+	// 			)
+    //         ),
 			
-        );
-        $this->settings->setFields( $fields );
-    }	
+    //     );
+    //     $this->settings->setFields( $fields );
+    // }
+	
 }

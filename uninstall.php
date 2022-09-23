@@ -16,6 +16,24 @@ $books = get_posts( array( 'post_type' => 'book', 'numberposts' => -1 ) );
 foreach( $books as $book ) {
 	wp_delete_post( $book->ID, true );
 }
+if(get_option('ec_product_plugin_cpt')){
+	delete_option('ec_product_plugin_cpt');
+}
+if(get_option('custom_login_logo_one')){
+	delete_option('custom_login_logo_one');
+}
+if(get_option('custom_login_bg_one')){
+	delete_option('custom_login_bg_one');
+}
+if(get_option('custom_login_logo_two')){
+	delete_option('custom_login_logo_two');
+}
+if(get_option('custom_login_logo_three')){
+	delete_option('custom_login_logo_three');
+}
+if(get_option('ec_product_plugin')){
+	delete_option('ec_product_plugin');
+}
 
 // Access the database via SQL
 global $wpdb;

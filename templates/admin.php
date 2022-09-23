@@ -1,11 +1,11 @@
 <div class="wrap">
-	<h1>Ec_product Plugin</h1>
+	<h1><?php echo esc_html_e('Ec_product Plugin', 'ec-product-plugin')?></h1>
 	<?php settings_errors(); ?>
 
 	<ul class="nav nav-tabs">
-		<li class="active"><a href="#tab-1">Manage Settings</a></li>
-		<li><a href="#tab-2">Updates</a></li>
-		<li><a href="#tab-3">About</a></li>
+		<li class="active"><a href="#tab-1"><?php echo __('Manage Settings', 'ec-product-plugin')?></a></li>
+		<!-- <li><a href="#tab-2"><?php echo __('Update', 'ec-product-plugin')?></a></a></li>
+		<li><a href="#tab-3"><?php echo __('About', 'ec-product-plugin')?></a></a></li> -->
 	</ul>
 
 	<div class="tab-content">
@@ -21,12 +21,12 @@
 			
 		</div>
 
-		<div id="tab-2" class="tab-pane">
+		<!-- <div id="tab-2" class="tab-pane">
 			<h3>Updates</h3>
 		</div>
 
 		<div id="tab-3" class="tab-pane">
 			<h3>About</h3>
-		</div>
+		</div> -->
 	</div>
 </div>

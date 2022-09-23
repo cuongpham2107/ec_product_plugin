@@ -33,14 +33,17 @@ class Dashboard extends BaseController
 		$this->setSections();
 		$this->setFields();
 
-		$this->settings->addPages( $this->pages )->withSubPage( 'Dashboard' )->register();
+		$this->settings->addPages( $this->pages )->withSubPage( __('Dashboard','ec-product-plugin') )->register();
+
+		
 	}
 
+	
 	public function setPages() 
 	{
 		$this->pages = array(
 			array(
-				'page_title' => 'Ec_product Plugin', 
+				'page_title' => __('Ec_product Plugin','ec-product-plugin'), 
 				'menu_title' => 'Ec_product', 
 				'capability' => 'manage_options', 
 				'menu_slug' => 'ec_product_plugin', 
@@ -69,7 +72,7 @@ class Dashboard extends BaseController
 		$args = array(
 			array(
 				'id' => 'ec_product_admin_index',
-				'title' => 'Settings Manager',
+				'title' => esc_html__('Settings Manager','ec-product-plugin'),
 				'callback' => array( $this->callbacks_mngr, 'adminSectionManager' ),
 				'page' => 'ec_product_plugin'
 			)

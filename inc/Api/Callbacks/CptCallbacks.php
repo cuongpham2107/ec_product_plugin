@@ -9,7 +9,7 @@ class CptCallbacks
 
 	public function cptSectionManager()
 	{
-		echo 'Create as many Custom Post Types as you want.';
+		 echo __('Create as many Custom Post Types as you want.', 'ec-product-plugin');
 	}
 
 	public function cptSanitize( $input )

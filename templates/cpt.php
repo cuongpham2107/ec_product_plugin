@@ -1,5 +1,5 @@
 <div class="wrap">
-	<h1>CPT Manager</h1>
+	<h1><?php echo __('CPT Manage', 'ec-product-plugin')?></a></h1>
 	<?php settings_errors(); ?>
 
 	<form method="post" action="options.php">
@@ -9,4 +9,9 @@
 			submit_button();
 		?>
 	</form>
+	<ul>
+		<li>
+			<a href=""></a>
+		</li>
+	</ul>
 </div>
