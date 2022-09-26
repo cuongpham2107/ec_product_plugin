@@ -9,7 +9,7 @@
 					settings_fields( 'custom_login_settings' );
 					do_settings_sections( 'custom_login_page' );
 					?>
-					<h2 class="font-bold">Giao diện</h2>
+					<h2 class="font-bold mt-4">Giao diện</h2>
 					<div class="flex space-x-4">
 						<?php
 						$image_one = get_option('custom_login_logo_one');//option value

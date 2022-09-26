@@ -16,12 +16,15 @@ Domain Path: /languages
 
 
 // If this file is called firectly, abort!!!
-defined( 'ABSPATH' ) or die( 'Hey, what are you doing here? You silly human!' );
+defined( 'ABSPATH' ) or die( 'Hey,' );
 
 
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-
+/**
+ * 
+ * get_optin của logo và bg để chèn vào trang login
+ */
 function my_login_logo() { 
 	$active = get_option('active_theme_login');
 	$logo = get_option('custom_login_logo_'.$active);

@@ -38,7 +38,9 @@ class Dashboard extends BaseController
 		
 	}
 
-	
+	/**
+	 * Đăng kí các trường trong Top-menu
+	 */
 	public function setPages() 
 	{
 		$this->pages = array(

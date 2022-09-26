@@ -14,7 +14,7 @@ class Activate
 		}
 
 		$default = array();
-
+		
 		update_option( 'ec_product_plugin', $default );
 	}
 }

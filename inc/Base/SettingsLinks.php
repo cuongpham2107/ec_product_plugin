@@ -12,7 +12,7 @@ class SettingsLinks extends BaseController
 	{
 		add_filter( "plugin_action_links_$this->plugin", array( $this, 'settings_link' ) );
 	}
-
+	
 	public function settings_link( $links ) 
 	{
 		$settings_link = '<a href="admin.php?page=ec_product_plugin">Settings</a>';

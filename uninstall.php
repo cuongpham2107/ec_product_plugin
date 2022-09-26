@@ -10,7 +10,8 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	die;
 }
 
-// Clear Database stored data
+
+// Xóa dữ liệu được lưu trữ trên Cơ sở dữ liệu
 $books = get_posts( array( 'post_type' => 'book', 'numberposts' => -1 ) );
 
 foreach( $books as $book ) {
@@ -35,7 +36,7 @@ if(get_option('ec_product_plugin')){
 	delete_option('ec_product_plugin');
 }
 
-// Access the database via SQL
+// Truy cập cơ sở dữ liệu qua SQL
 global $wpdb;
 $wpdb->query( "DELETE FROM wp_posts WHERE post_type = 'book'" );
 $wpdb->query( "DELETE FROM wp_postmeta WHERE post_id NOT IN (SELECT id FROM wp_posts)" );

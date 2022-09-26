@@ -9,10 +9,16 @@
 
  class LoginCallbacks extends BaseController
  {
+    /**
+     * Trả về giao diện form custom login
+     */
     public function adminCustomLogin()
 	{
 		return require_once( "$this->plugin_path/templates/custom_login.php" );
 	}
+    /**
+     * In section
+     */
     public function sectionCustomLogin()
     {
         echo __('Custom login setting Field','ec-product-plugin');
@@ -22,6 +28,7 @@
         
         return $input;
     }
+    // Không sử dung field
     public function logo_login($data)
     {
        

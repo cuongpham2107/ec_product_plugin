@@ -7,7 +7,7 @@ namespace Inc;
 final class Init
 {
 	/**
-	 * Store all the classes inside an array
+	 * Lưu trữ tất cả các Class bên trong một mảng
 	 * @return array Full list of classes
 	 */
 	public static function get_services() 
@@ -22,8 +22,8 @@ final class Init
 	}
 
 	/**
-	 * Loop through the classes, initialize them, 
-	 * and call the register() method if it exists
+	 * Lặp qua các lớp, khởi tạo chúng,
+	 * và gọi phương thức register () nếu nó tồn tại
 	 * @return
 	 */
 	public static function register_services() 
@@ -37,9 +37,9 @@ final class Init
 	}
 
 	/**
-	 * Initialize the class
-	 * @param  class $class    class from the services array
-	 * @return class instance  new instance of the class
+	 * Khởi tạo lớp
+	 * @param  class $class   Class từ mảng get_services
+	 * @return class instance  Class đã khởi tạo
 	 */
 	private static function instantiate( $class )
 	{
